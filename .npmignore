@@ -1,0 +1,11 @@
+.*
+node_modules
+public
+src
+babel.config.js
+package-lock.json
+vue.config.js
+doc.md
+temp
+*.html
+*.js.map

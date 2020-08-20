@@ -1,0 +1,29 @@
+._ {
+  position: fixed;
+  z-index: 999;
+  background: #eee;
+  border-radius: 4px;
+  animation: mn-skeleton-blink 1.2s ease-in-out infinite;
+}
+
+.__ {
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+
+.skeleton-component {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: #fff;
+}
+
+@keyframes mn-skeleton-blink {
+  50% {
+    opacity: 0.6;
+  }
+}
