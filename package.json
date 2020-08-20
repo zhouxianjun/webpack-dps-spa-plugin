@@ -2,13 +2,18 @@
   "name": "webpack-dps-spa-plugin",
   "version": "0.1.0",
   "private": false,
-  "main": "src/lib/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "build-bundle": "vue-cli-service build --mode production --target lib ./src/lib/index.js --report",
     "lint": "vue-cli-service lint"
   },
+  "keywords": [
+    "webpack",
+    "dps",
+    "skeleton"
+  ],
   "dependencies": {
     "@vue/cli-shared-utils": "^4.5.4",
     "cheerio": "^1.0.0-rc.3",
@@ -32,8 +37,10 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11",
     "webpack-node-externals": "^2.5.1",
     "webpack": "^4.44.1"
+  },
+  "repository": {
+    "url": "https://github.com/zhouxianjun/webpack-dps-spa-plugin"
   }
 }
