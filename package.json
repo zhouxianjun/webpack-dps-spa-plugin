@@ -1,6 +1,6 @@
 {
   "name": "webpack-dps-spa-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "main": "lib/index.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "core-js": "^3.6.5",
     "draw-page-structure": "^1.0.8",
     "express": "^4.17.1",
+    "fast-install-puppeteer": "^1.0.5",
     "http-proxy-middleware": "^1.0.5",
     "lodash": "^4.17.19",
     "portfinder": "^1.0.28",
