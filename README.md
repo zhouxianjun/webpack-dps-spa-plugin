@@ -27,10 +27,17 @@
 ### options.skeletonRoutes
 | Param | Description |
 | --- | --- |
-| name | 必须和路由定义的name一致 ｜
-| path | 匹配当前路由的正则 ｜
-| pathname | 访问路由的path地址，例如: /mn/demo ｜
-| skeletonId | 骨架屏路由ID，唯一即可 ｜
+| name | 必须和路由定义的name一致 |
+| path | 匹配当前路由的正则 |
+| pathname | 访问路由的path地址，例如: /mn/demo |
+| skeletonId | 骨架屏路由ID，唯一即可 |
+
+### dps.config.js 额外参数
+| Param | Description |
+| --- | --- |
+| inject | 注入window变量值 |
+| injectProperty | 注入window变量属性名 |
+| launch | puppeteer 启动参数配置 |
 
 ## 使用
 webpack chainWebpack 添加插件 
@@ -68,4 +75,16 @@ or
     }
 }
 </route>
+```
+
+### 自定义返回数据
+```js
+dpsServer: {
+    proxy: {
+        '^/app-gateway/demo': (req, res) => {
+            res.json({code: 200, data: {}});
+            res.end();
+        }
+    }
+}
 ```
