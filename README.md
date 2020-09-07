@@ -23,6 +23,7 @@
 | options.staticDir | 打包输出目录（index.html输出目录），默认 项目根目录下的dist目录 |
 | options.enableAutoSkeletonRoutes | 是否采用自动配置路由，必须使用 auto-routing 插件 |
 | options.skeletonRoutes | 需要渲染的骨架屏路由配置，enableAutoSkeletonRoutes 为 false 可用 |
+| options.await | 等待时间（ms），默认0 |
 
 ### options.skeletonRoutes
 | Param | Description |
